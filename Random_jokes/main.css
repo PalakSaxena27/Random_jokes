@@ -1,0 +1,81 @@
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fff9c4, #ffe082);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Heading Style */
+h1 {
+    color: #f57f17;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Joke Display Boxes */
+#setup, #punchline {
+    background-color: #fffde7;
+    border: 2px dashed #fdd835;
+    padding: 1.2rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 600px;
+    font-size: 1.2rem;
+    color: #5d4037;
+    transition: transform 0.2s;
+}
+
+#setup:hover, #punchline:hover {
+    transform: scale(1.03);
+}
+
+/* Button Style */
+button {
+    background-color: #fbc02d;
+    color: #212121;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #fdd835;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #setup, #punchline {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+}
